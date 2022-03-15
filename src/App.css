@@ -1,0 +1,161 @@
+/* @import url('https://fonts.googleapis.com.css2?family=Inter&display=swap'); */
+
+@media screen and (max-width:428px){
+
+  :root {
+    /* Font */
+    --bigFont: 30px;
+    --medFont: 12px;
+  }
+
+  .ride {
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--bigRadius);
+    margin-bottom: 20px;
+  }
+  .ride img {
+    padding: 10px;
+    padding-right:40px;
+    margin:auto;
+  }
+  .details{
+    margin-top:10px;
+    padding-left:5px;
+  }
+  .fil{
+    position: relative;
+    padding:40px;
+  }
+  .name {
+    font-size: 16px;
+  }
+}
+
+:root {
+  /* Colors */
+  --navBg: #101010;
+  --bodyBG: #000000cc;
+  --textColor: #ffffff;
+  --rideBg: #171717;
+
+  /* Font */
+  --fontFamily: Inter
+  --bigFont: 36px;
+  --medFont: 16px;
+  --thickFont: 700;
+
+  /* Border */
+  --smRadius: 5px;
+  --bigRadius: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily);
+}
+
+header {
+  background-color: var(--navBg);
+  color: var(--textColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.name {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.profile img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.mini-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--medFont);
+  margin: 15px 20px 20px;
+  color: var(--textColor);
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tabs p {
+  margin-right: 30px;
+  cursor: pointer;
+  padding:5px 0;
+}
+.active {
+  font-weight: var(--thickFont);
+  border-bottom: 2px solid var(--textColor);
+}
+.filter{
+  cursor: pointer;
+
+}
+.filter img {
+  color: var(--navBg);
+  margin-right: 10px;
+}
+
+.filterOpt{
+  position: absolute;
+  background-color: var(--navBg);
+  padding:20px;
+  border-radius: var(--bigRadius);
+  right:10px;
+  top: 70px;
+}
+.fil p {
+  width: 150px;
+  padding: 8px 10px;
+  background-color: #232323;
+  color: var(--textColor);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.body {
+  position: relative;
+  background-color: var(--bodyBG);
+  padding: 10px 30px;
+}
+
+.ride {
+  background-color: var(--rideBg);
+  padding: 30px 35px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--bigRadius);
+  margin-bottom: 20px;
+}
+.ride img {
+  margin-right: 50px;
+  width: 298px;
+  height: 148px;
+  border-radius: var(--smRadius);
+}
+.ride p {
+  color: var(--textColor);
+  margin-top: 7px;
+  font-size: var(--medFont);
+}
+
+.det {
+  color: #cfcfcf;
+}
+
